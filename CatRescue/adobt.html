@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adobt</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<script src="js/scripts.js" type="module"></script>
+	<div class="Cats-header">
+		<div class="Cats-content">
+			<div class="Cats-buttonContainer">
+
+				<a class="Button" href="home.html">Home</a> <a class="Button"
+					href="adobt.html">Adopt</a>
+			</div>
+			<h2 class="cats-header">Rehome a pet</h2>
+			<p class="Cats-blurb">We find homes for unwanted cats across the
+				UK and our service means we help each pet find the right person for
+				them.</p>
+		</div>
+	</div>
+	</div>
+
+
+
+	<div class=" Cats-form">
+
+		<form class="form-horizontal  " id="upload_form"
+			enctype="multipart/form-data">
+
+
+			<div class="form-group">
+				<div class="col-sm-10">
+					<label class="control-label col-sm-2" for="sub_id">Id</label> <input
+						type="text" id="sub_id" name="sub_id">
+				</div>
+
+			</div>
+			<div class="form-group">
+				<div class="col-sm-10">
+					<label class="control-label col-sm-2" for="sub_id">Breed</label> <input
+						type="text" id=beerd name="beerd">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-10">
+					<label class="control-label col-sm-2" for="sub_id">Age</label> <input
+						type="text" id="age" name="age">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-10">
+					<label class="control-label col-sm-2" for="sub_id">Color</label> <input
+						type="text" id="color" name="color">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-10">
+					<input type="file" id="file" name="file" multiple>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-10">
+					<button id="uploadBtn">Upload</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="container">
+		<hr>
+		<p>Request Status:</p>
+		<div id="status"></div>
+		<hr>
+		<p>API Response:</p>
+		<div class="Cats-gallery col container">
+			<h6 style="display: none;" id="id"></h6>
+			<div style="display: none;" id="url"></div>
+			<div></div>
+
+			<div id="response"></div>
+
+		</div>
+	</div>
+	<table class="  container table" id="result">
+		<tr>
+			<th>sub_id</th>
+			<th>Beerd</th>
+			<th>Age</th>
+			<th>Color</th>
+			<th>image</th>
+		</tr>
+		<tr>
+			<td id="tableId"></td>
+			<td id="tableBeerd"></td>
+			<td id="tableAge"></td>
+			<td id="tableColor"></td>
+
+			<td id="tableImage"><div id="image1"></div></td>
+		</tr>
+	</table>
+
+	<!-- 
+<nav class="">
+  <a href="home.html" class="w3-button w3-bar-item">Home</a>
+  <a href="adobt.html" class="w3-button w3-bar-item">Adopt</a>
+</nav>
+ -->
+
+
+
+</body>
+</html>

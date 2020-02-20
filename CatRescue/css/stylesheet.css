@@ -1,0 +1,237 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: white;
+}
+
+.shadow {
+	padding: 24%;
+}
+
+.container {
+	position: relative;
+	width: 50%;
+}
+
+.Cats-form {
+	padding: 30%;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 15%;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: white;;
+}
+
+.container:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	color: black;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.upload-btn-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.btn {
+	border: 2px solid gray;
+	color: gray;
+	background-color: white;
+	padding: 8px 20px;
+	border-radius: 8px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+	font-size: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+#image {
+	text-align: center;
+}
+
+\
+.Cats-gallery {
+	padding: 20%;
+}
+
+.js-nav {
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	left: 2em;
+}
+
+.Cats-header {
+	/* Wave Color */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#59adeb+0,42c2b5+52,34ce93+100 */
+	background: #59adeb;
+	/* Old browsers */
+	background: -moz-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#59adeb',
+		endColorstr='#34ce93', GradientType=1);
+	/* IE6-9 fallback on horizontal gradient */
+	background-size: 350% 350%;
+	animation: waveColors 8s ease infinite;
+	/* End Wave Color */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.cats-header {
+	font-family: initial;
+	color: #fff;
+	font-weight: 200;
+	line-height: 48px;
+	margin-bottom: -5px;
+	font-size: 32px;
+	font-weight: 400
+}
+
+.Cats-blurb {
+	font-family: initial;
+	color: #fff;
+	font-size: 21px;
+	font-weight: 200;
+	line-height: 28px;
+	opacity: .7;
+	-ms-filter: "alpha(opacity=70)";
+	transition: opacity 300ms linear;
+	padding-bottom: 2em;
+}
+
+/* Buttons */
+.Button {
+	-webkit-appearance: none;
+	background: transparent;
+	border-color: currentcolor;
+	border-style: solid;
+	border-width: 1px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: inherit;
+	cursor: pointer;
+	display: inline-block;
+	font: inherit;
+	line-height: normal;
+	margin: 0;
+	padding: .4em .75em;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: normal;
+}
+
+.Cats-buttonContainer {
+	color: #fff;
+	margin: 0 auto;
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+	text-align: right;
+	width: 95%;
+}
+
+.Cats-buttonContainer .Button {
+	border-radius: 5px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	font-size: 16px;
+	font-weight: 200;
+	padding: 10px 35px;
+}
+
+.Cats-buttonContainer .Button.StreamsLogin {
+	background: rgba(255, 255, 255, 0.3);
+	border: 1px solid transparent;
+}
+
+.Cats-buttonContainer .Button:hover, .Cats-buttonContainer .Button:focus
+	{
+	background: #fff;
+	color: #1da1f2;
+}
+
+/* Animation Wave Color */
+@
+-webkit-keyframes waveColors { 0% {
+	background-position: 0% 7%;
+}
+
+50%
+{
+background-position
+:
+ 
+100%
+94%;
+}
+100%
+{
+background-position
+:
+ 
+0%
+7%;
+}
+}
+@
+keyframes waveColors { 0% {
+	background-position: 0% 7%;
+}
+50%
+{
+background-position
+:
+ 
+100%
+94%;
+}
+100%
+{
+background-position
+:
+ 
+0%
+7%;
+}
+}
